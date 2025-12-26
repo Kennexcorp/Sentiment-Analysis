@@ -10,8 +10,8 @@ app.config.from_file(".env.json", load=json.load)
 
 @app.route("/", methods=['GET', 'POST'])
 def sentiment():
-    endpoint = app.config['ENDPOINT']
-    key = app.config['LANGUAGE_SERVICE_KEY']
+    endpoint = app.config['TEXT_ANALYSIS_ENDPOINT']
+    key = app.config['TEXT_ANALYSIS_KEY']
     
     if request.method == 'POST':
         text = request.get_json()['text']

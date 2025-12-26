@@ -32,8 +32,8 @@ This application provides a simple web interface for analyzing the sentiment of 
 3. Configure your Azure Cognitive Services credentials in `.env.json`:
    ```json
    {
-       "ENDPOINT": "https://your-resource-name.cognitiveservices.azure.com/",
-       "LANGUAGE_SERVICE_KEY": "your-subscription-key"
+       "TEXT_ANALYSIS_ENDPOINT": "https://your-resource-name.cognitiveservices.azure.com/",
+       "TEXT_ANALYSIS_KEY": "your-subscription-key"
    }
    ```
 
