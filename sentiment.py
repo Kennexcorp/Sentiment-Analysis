@@ -9,7 +9,7 @@ app.config.from_file(".env.json", load=json.load)
 
 
 @app.route("/", methods=['GET', 'POST'])
-def hello_world():
+def sentiment():
     endpoint = app.config['ENDPOINT']
     key = app.config['LANGUAGE_SERVICE_KEY']
     
