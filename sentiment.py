@@ -39,7 +39,7 @@ def with_sdk_lib(endpoint, key, documents):
         client = TextAnalyticsClient(endpoint, AzureKeyCredential(key))
         response = client.analyze_sentiment(documents)
         results = response[0]
-        # print(results.confidence_scores)
+        
     except AzureError as e:
         print("error occured", e.message)
     
